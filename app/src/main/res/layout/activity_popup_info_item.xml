@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="30dp"
+    android:padding="30dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/ic_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu_about"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/ic_info"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/ic_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_link"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/ic_link"
+            android:text="Link" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/ic_renew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_autorenew"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/ic_renew"
+            android:text="dd-mm-yyyy hh:mm" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/ic_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_update"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/ic_update"
+            android:text="24h./144" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/ic_stealth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_visibility_off"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/ic_stealth"
+            android:text="Stealth mode is disabled" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_close_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLOSE"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@id/version_app"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/white"
+        style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+</LinearLayout>

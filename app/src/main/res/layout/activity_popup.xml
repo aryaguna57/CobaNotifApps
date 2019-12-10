@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="30dp"
+    android:padding="30dp">
+
+    <ImageView
+        android:id="@+id/logo_in_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ic_launcher_round"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/version_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="v.0.1"
+        android:textSize="14dp"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/logo_in_about"/>
+
+    <Button
+        android:id="@+id/button_close_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLOSE"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@id/version_app"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/white"
+        style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+</RelativeLayout>
